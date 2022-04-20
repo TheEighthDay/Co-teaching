@@ -25,15 +25,26 @@ Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). We can d
 ### Models
 
 
+* ResNet50: Trained exclusively on the source domain.
+* DDC: A classical deep domain adaptation model that minimizes domain discrepancy measured in light of first-order statistics of the deep features (Tzeng et al., Deep Domain Confusion: Maximizing for Domain Invariance, ArXiv 2014)
+* SRDC:
+* KDDE: 
+* Co-Teaching:
+
+
 
 ### Office-Home
 
-
+```
+python eval_all_tasks.py --test_collection officehome_test
+```
 
 
 ### DomainNet
 
-
+```
+python eval_all_tasks.py --test_collection domainnet_test
+```
 
 
 ## Publications on UDE
@@ -50,11 +61,11 @@ year={2021},
 note={in press},  
 }
 @article{co-teaching,
-  author = {Tian, Kaibin and Wei, Qijie and Li, Xirong},
-  title = {Co-Teaching for Unsupervised Domain Adaptation and Expansion},
-  year = {2022},
-  journal = {ArXiv},
-  volume={abs/2204.01210}
+author = {Tian, Kaibin and Wei, Qijie and Li, Xirong},
+title = {Co-Teaching for Unsupervised Domain Adaptation and Expansion},
+year = {2022},
+journal = {ArXiv},
+volume={abs/2204.01210}
 }
 
 ```
