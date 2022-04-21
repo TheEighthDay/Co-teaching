@@ -13,19 +13,37 @@ while miCT further enhances the generalization ability of the student
 ## Data for UDA and UDE
 
 First, we need download [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html) and [DomainNet](http://ai.bu.edu/M3SDA/) into `datasets` folder.
-Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). We can download division and pretrained checkpoints in this [link](xxxx).
+Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). Download division data lists and pretrained checkpoints in this [link](xxxx) into `VisualSearch`.
 
 
-## Inference
+## Inference with Pre-Trained Models
 
+We provide the command to evaluate one task.
 
+```
+python  predict.py  --config="configs/CT_DDC_ResNet50.yaml" --source="Art" --target="Clipart"  --dataset="officehome" --datasetroot="datasets/OfficeHome" --num_class=65 --run=1
+```
+
+We also provide the script to evaluate all tasks in one dataset (Office-Home or DomainNet).
+```
+./predict.sh
+```
 
 ## Train 
 
+We provide four different **yaml** files in `configs`，which can be used to configure the KDDE and CT. Changing different yaml files to train different models.
+
+We provide the command to train one task.
+```
+python  train.py  --config="configs/CT_DDC_ResNet50.yaml" --source="Art" --target="Clipart"  --dataset="officehome" --datasetroot="datasets/OfficeHome" --num_class=65 --run=2
+```
+We also provide the script to train all tasts in one dataset (Office-Home or DomainNet).
+
+```
+./train.sh
+```
 
 ## Performance
-
-
 ### Models
 
 * ResNet50: Trained exclusively on the source domain.
