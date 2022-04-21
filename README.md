@@ -29,7 +29,7 @@ We also provide the script to evaluate all tasks in one dataset (Office-Home or 
 ./predict.sh
 ```
 
-## Train 
+## Train New Models
 
 We provide four different **yaml** files in `configs`，which can be used to configure the KDDE and CT. Changing different yaml files to train different models.
 
