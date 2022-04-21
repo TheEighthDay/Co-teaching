@@ -10,6 +10,11 @@ from a leader-teacher network and an assistant-teacher network to a
 student network, to let the student better resolve cross-domain visual ambiguity,
 while miCT further enhances the generalization ability of the student
 
+## Prepare the Environment
+Python version is 3.8.
+```
+pip install -r requirements.txt
+```
 ## Download Data
 
 First, we need download [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html) and [DomainNet](http://ai.bu.edu/M3SDA/) into `datasets` folder.
