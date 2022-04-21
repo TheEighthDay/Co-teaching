@@ -1,7 +1,7 @@
 
 # Code Release for Paper: Co-Teaching for Unsupervised Domain Adaptation and Expansion
 
-## Introduction
+## Introduce Our Paper
 
 We propose [Co-Teaching (CT)](https://arxiv.org/abs/2204.01210) as a generic method for unsupervised domain
 adaptation and expansion. CT consists of knowledge distillation based CT
@@ -10,7 +10,7 @@ from a leader-teacher network and an assistant-teacher network to a
 student network, to let the student better resolve cross-domain visual ambiguity,
 while miCT further enhances the generalization ability of the student
 
-## Data for UDA and UDE
+## Download Data
 
 First, we need download [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html) and [DomainNet](http://ai.bu.edu/M3SDA/) into `datasets` folder.
 Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). Download division data lists and pretrained checkpoints in this [link](xxxx) into `VisualSearch`.
@@ -18,13 +18,13 @@ Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). Download
 
 ## Inference with Pre-Trained Models
 
-We provide the command to evaluate one task.
+We provide the command to inference model and predict one task.
 
 ```
 python  predict.py  --config="configs/CT_DDC_ResNet50.yaml" --source="Art" --target="Clipart"  --dataset="officehome" --datasetroot="datasets/OfficeHome" --num_class=65 --run=1
 ```
 
-We also provide the script to evaluate all tasks in one dataset (Office-Home or DomainNet).
+We also provide the script to predict all tasks in one dataset (Office-Home or DomainNet).
 ```
 ./predict.sh
 ```
@@ -43,7 +43,7 @@ We also provide the script to train all tasts in one dataset (Office-Home or Dom
 ./train.sh
 ```
 
-## Performance
+## Evaluate Model Performance
 ### Models
 
 * ResNet50: Trained exclusively on the source domain.
