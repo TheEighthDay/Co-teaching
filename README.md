@@ -1,14 +1,7 @@
 
-# Code Release for Paper: Co-Teaching for Unsupervised Domain Adaptation and Expansion
+# Co-Teaching for Unsupervised Domain Adaptation and Expansion
 
-## Introduce Our Paper
-
-We propose [Co-Teaching (CT)](https://arxiv.org/abs/2204.01210) as a generic method for unsupervised domain
-adaptation and expansion. CT consists of knowledge distillation based CT
-(kdCT) and mixup based CT (miCT). Specifically, kdCT transfers knowledge
-from a leader-teacher network and an assistant-teacher network to a
-student network, to let the student better resolve cross-domain visual ambiguity,
-while miCT further enhances the generalization ability of the student
+[Co-Teaching (CT)](https://arxiv.org/abs/2204.01210) is a generic method for unsupervised domain adaptation and expansion. CT consists of knowledge distillation based CT (kdCT) and mixup based CT (miCT). Specifically, kdCT transfers knowledge from a leader-teacher network and an assistant-teacher network to a student network, to let the student better resolve cross-domain visual ambiguity, while miCT further enhances the generalization ability of the student. CT works for both image classification and image semantic segmentation. 
 
 ## Prepare the Environment
 Python version is 3.8.
@@ -31,7 +24,7 @@ python  predict.py  --config="configs/CT_DDC_ResNet50.yaml" --source="Art" --tar
 
 We also provide the script to predict all tasks in one dataset (Office-Home or DomainNet).
 ```
-./predict.sh
+bash predict.sh
 ```
 
 ## Train New Models
@@ -45,7 +38,7 @@ python  train.py  --config="configs/CT_DDC_ResNet50.yaml" --source="Art" --targe
 We also provide the script to train all tasts in one dataset (Office-Home or DomainNet).
 
 ```
-./train.sh
+bash train.sh
 ```
 
 ## Evaluate Model Performance
@@ -55,8 +48,8 @@ We also provide the script to train all tasts in one dataset (Office-Home or Dom
 * DDC: A classical deep domain adaptation model that minimizes domain discrepancy measured in light of first-order statistics of the deep features (Tzeng et al., Deep Domain Confusion: Maximizing for Domain Invariance, ArXiv 2014)
 * SRDC: A deep domain adaptation model that enhances its discrimination ability by clustering features from intermediate
 layers of the network.
-* KDDE: The first generic method for unsupervised domain adaptation and expansion.
-* **Co-Teaching**: A new  method for unsupervised domain adaptation and expansion by alleviating cross-domain visual ambiguity.
+* [KDDE](https://dl.acm.org/doi/abs/10.1145/3448108): The first generic method for unsupervised domain adaptation and expansion.
+* **Co-Teaching**: Our  method for unsupervised domain adaptation and expansion by alleviating cross-domain visual ambiguity.
 
 
 ### Office-Home
