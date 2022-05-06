@@ -89,12 +89,17 @@ python eval_all_tasks.py --test_collection domainnet_test
 Citation of the UDE task and data is the following:
 
 ```
-@article{tomm-ude,      
-title={Unsupervised Domain Expansion for Visual Categorization},    
-author={Jie Wang and Kaibin Tian and Dayong Ding and Gang Yang and Xirong Li},     
-journal = {ACM Transactions on Multimedia Computing Communications and Applications (TOMM)},   
-year={2021},  
-note={in press},  
+@article{kdde,
+author = {Wang, Jie and Tian, Kaibin and Ding, Dayong and Yang, Gang and Li, Xirong},
+title = {Unsupervised Domain Expansion for Visual Categorization},
+year = {2021},
+month = {nov},
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+volume = {17},
+number = {4},
+issn = {1551-6857},
+articleno = {121},
+numpages = {24}
 }
 @article{co-teaching,
 author = {Tian, Kaibin and Wei, Qijie and Li, Xirong},
