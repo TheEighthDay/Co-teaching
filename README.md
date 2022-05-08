@@ -87,7 +87,7 @@ python eval_all_tasks.py --test_collection domainnet_test
 | CT(DDC)    |         **74.63** |         **48.42** |           **61.53** |
 
 ## License
-This project is released under the Apache license. Please see the [LICENSE](LICENSE) file for more information.
+This project is released under the Apache License. Please see the [LICENSE](LICENSE) file for more information.
 
 ## Publications on UDE
 
