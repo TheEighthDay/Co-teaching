@@ -86,6 +86,8 @@ python eval_all_tasks.py --test_collection domainnet_test
 | KDDE(DDC)  |         73.77 |         48.04 |           60.91 |
 | CT(DDC)    |         **74.63** |         **48.42** |           **61.53** |
 
+## License
+This project is released under the MIT license. Please see the [LICENSE] file for more information.
 
 ## Publications on UDE
 
