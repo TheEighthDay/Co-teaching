@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ## Download Data
 
 First, we need download [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html) and [DomainNet](http://ai.bu.edu/M3SDA/) into `datasets` folder.
-Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). Download division data lists and pretrained checkpoints in this [Baidu Drive link(Extracted code: wt38)](https://pan.baidu.com/share/init?surl=zR-Kjr0BUOTdw01Rma8jbA) into `VisualSearch`.
+Our data division follows the [KDDE](https://arxiv.org/abs/2104.00233). Download division data lists and pretrained checkpoints in this [Google Drive link](https://drive.google.com/file/d/14CEO3qHDr_0LBZoRVjq1BNXlDCTl3pvX/view) into `VisualSearch`.
 
 
 ## Inference with Pre-Trained Models
