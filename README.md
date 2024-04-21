@@ -1,7 +1,7 @@
 
 # Co-Teaching for Unsupervised Domain Adaptation and Expansion
 
-[Co-Teaching (CT)](https://arxiv.org/abs/2204.01210) is a generic method for unsupervised domain adaptation and expansion. CT consists of knowledge distillation based CT (kdCT) and mixup based CT (miCT). Specifically, kdCT transfers knowledge from a leader-teacher network and an assistant-teacher network to a student network, to let the student better resolve cross-domain visual ambiguity, while miCT further enhances the generalization ability of the student. CT works for both image classification and image semantic segmentation. 
+Co-Teaching (CT)is a generic method for unsupervised domain adaptation and expansion. CT consists of knowledge distillation based CT (kdCT) and mixup based CT (miCT). Specifically, kdCT transfers knowledge from a leader-teacher network and an assistant-teacher network to a student network, to let the student better resolve cross-domain visual ambiguity, while miCT further enhances the generalization ability of the student. CT works for both image classification and image semantic segmentation. 
 
 <center><img src="fig/framework.png" width="90%" height=""></center>
 
@@ -89,30 +89,4 @@ python eval_all_tasks.py --test_collection domainnet_test
 ## License
 This project is released under the Apache License. Please see the [LICENSE](LICENSE) file for more information.
 
-## Publications on UDE
-
-Citation of the UDE task and data is the following:
-
-```
-@article{kdde,
-author = {Wang, Jie and Tian, Kaibin and Ding, Dayong and Yang, Gang and Li, Xirong},
-title = {Unsupervised Domain Expansion for Visual Categorization},
-year = {2021},
-month = {nov},
-journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
-volume = {17},
-number = {4},
-issn = {1551-6857},
-articleno = {121},
-numpages = {24}
-}
-@article{co-teaching,
-author = {Tian, Kaibin and Wei, Qijie and Li, Xirong},
-title = {Co-Teaching for Unsupervised Domain Adaptation and Expansion},
-year = {2022},
-journal = {ArXiv},
-volume={abs/2204.01210}
-}
-
-```
 
